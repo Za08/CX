@@ -17,7 +17,7 @@ def cx(byte: bytes) -> bytes:
         else:
             data += bytes([e ^ 0x32])
 
-    return data[::-1]
+    return data
 
 
 f_in = arg_or_input("file", "请输入要操作的文件(带后缀): ")
