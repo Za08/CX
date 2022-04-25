@@ -1,12 +1,12 @@
 from sys import argv
 
 
-def arg_or_input(arg_name: str, input_tip: str) -> str:
+def arg_or_input(arg_name: str, prompt: str) -> str:
     for item in argv[1:]:
         if item.startswith(arg_name + "="):
             split = item.split("=")
-            return input(input_tip) if len(split) < 2 else split[1]
-    return input(input_tip)
+            return input(prompt) if len(split) < 2 else split[1]
+    return input(prompt)
 
 
 def cx(byte: bytes) -> bytes:
