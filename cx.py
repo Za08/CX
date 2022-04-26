@@ -30,6 +30,5 @@ try:
     with open(file=f_out, mode="wb") as f:
         f.write(cx(text))
     print("已写入数据")
-
 except FileNotFoundError as e:
     print("未找到文件: '" + f_in + "'!")
